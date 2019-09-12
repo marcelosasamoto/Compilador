@@ -1,5 +1,4 @@
-int 2 if in 
-%# ¨ksl
-# ($ $ 3 @ ! " % $
-#@
- 5 -2
+int x = 2 
+if x == 2 {
+print Ola mundo
+} 

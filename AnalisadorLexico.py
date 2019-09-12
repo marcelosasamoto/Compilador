@@ -20,7 +20,6 @@ class AnalisadorLexico:
                         lnText.append((i+1,"TOKEN",x))
                     elif self.is_number(x):
                         lnText.append((i+1,"TOKEN_NUMERICO",x))
-                    elif x in range(len(lnText))
                     else:
                         lnText.append((i+1,"IDENTIFICADOR",x))
         return lnText
