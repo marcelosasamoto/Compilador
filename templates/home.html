@@ -1,8 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Compiladores</title>
+<html lang="pt-br"><head>
+  <title>Compiladores</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <style>
         /* JUST FOR THIS DEMO */
 html,body{ height:100%; }
@@ -23,32 +27,44 @@ textarea{
 }
     </style>
     <script src="static/jquery.min.js"> </script>
-</head>
 
-<body translate="no">
-<div>
 
-    <form method="POST"
-    <h2> Nome </h2>
-    <input type="text" name="nome" placeholder="Digite o nome do arquivo" style="border-radius: 6px; padding: 10px; font-size: 18;" value={{nome}}>
-    <h2 > Codigo</h2>
-    <textarea class='autoExpand' name="texto" rows='5' data-min-rows='5' placeholder='Digite o codigo'>{{codigo}}</textarea>
-    <input type="submit" value="Analisar" style="box-sizing: padding-box;">
+<style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script></head>
+<body aria-busy="true">
+
+<div class="container">
+  <h1>Analisador Lexico</h1>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+         <form method="POST"
+            <h2> Nome </h2>
+            <input type="text" name="nome" placeholder="Digite o nome do arquivo" style="border-radius: 6px; padding: 10px; font-size: 18;" value={{nome}}>
+            <h2 > Codigo</h2>
+            <textarea class='autoExpand' name="texto" rows='5' data-min-rows='5' placeholder='Digite o codigo'>{{codigo}}</textarea>
+            <input type="submit" value="Analisar" style="box-sizing: padding-box;">
+
+      </div>
+
+      <div class="col-ms-4">
+        <h2>Analise</h2>
+        {% for i in dado %}
+            Linha {{ i[0] }} : {{ i[1] }} : {{ i[2] }} <br>
+        {% endfor %}
+      </div>
+
 
 </div>
 
-<div>
-    <h2>Analise</h2>
-    {% for i in dado %}
-        Linha {{ i[0] }} : {{ i[1] }} : {{ i[2] }} <br>
 
-    {% endfor %}
+
+  </div>
 </div>
 
-<script src="static/cod.js"> </script>
-
-</body>
+  <script type="text/javascript" src="static/cod.js"></script><div class="hiddendiv common"></div><div class="hiddendiv common">
 
 
-
-</html>
+</div></body></html>
