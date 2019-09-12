@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compiladores</title>
+    <style>
+        /* JUST FOR THIS DEMO */
+html,body{ height:100%; }
+body{ background:#4A90E2; padding: 10px; }
+
+textarea{
+  display: block;
+  box-sizing: padding-box;
+  overflow: hidden;
+
+  padding: 10px;
+  width: 750px;
+  font-size: 14px;
+  margin: 50px auto;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(black, .3);
+  border: 0;
+}
+    </style>
+    <script src="static/jquery.min.js"> </script>
+</head>
+
+<body translate="no">
+<div>
+
+    <form method="POST"
+    <h2> Nome </h2>
+    <input type="text" name="nome" placeholder="Digite o nome do arquivo" style="border-radius: 6px; padding: 10px; font-size: 18;" value={{nome}}>
+    <h2 > Codigo</h2>
+    <textarea class='autoExpand' name="texto" rows='5' data-min-rows='5' placeholder='Digite o codigo'>{{codigo}}</textarea>
+    <input type="submit" value="Analisar" style="box-sizing: padding-box;">
+
+</div>
+
+<div>
+    <h2>Analise</h2>
+    {% for i in dado %}
+        Linha {{ i[0] }} : {{ i[1] }} : {{ i[2] }} <br>
+
+    {% endfor %}
+</div>
+
+<script src="static/cod.js"> </script>
+
+</body>
+
+
+
+</html>

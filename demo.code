@@ -1,0 +1,18 @@
+int x
+float y
+x = 12
+y = 23.2
+z = 2 4 6 2 3 4
+if x != y {
+    print sao diferentes
+    // um comentario
+    for i in z {
+        print valor do array &i
+    }
+}
+
+
+    33 3  3
+ a  2 3   3   5
+
+
