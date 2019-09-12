@@ -5,8 +5,11 @@ Para testar, use o terminal com seguinte comando:
 ```
 python3 Interface.py 
 ```
-Analisador lexico ler o nome e codigo e salva um arquivo com extensão ".code" e depois analisa o arquivo salvo
 
+## Exemplos
+
+* Léxico
+    * ![](https://media.giphy.com/media/XE7obhdNoO0HvFnNEl/giphy.gif)
  ## Implementações
   - [x] Léxico
   - [ ] Sintático
