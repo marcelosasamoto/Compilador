@@ -10,15 +10,10 @@ python3 Interface.py
    - Tokens da palavra resevada:      
    int, float, String, boolean, True , False , return , if , for ,  in , or , and , == , != ,
    <= , >= , ! , + , - , * , ^ , / , % , " , = , // , { , } , ( , ) , [ , ] , print , input 
-<<<<<<< HEAD
    - Expressão Regular:
    Deve ser obrigatoriamente iniciado com a-z ou A-Z podendo conter a-z ou A-Z ou 0-9
    
 
-=======
-      
-- Linguagem sem nome definida.
->>>>>>> c4d0a2404298208e13eadf20bedaeb08e97eede2
 - A sintaxe é baseada em “espaços” ou “\s”, onde as palavras reservadas e identificadores devem ser separadas pelo espaços para reconhecer a sintaxe. Ex: int x = 0 (Aceita) | int x=0 (não aceita)
 
 
